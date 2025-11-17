@@ -1,0 +1,44 @@
+{
+  "timeZone": "Europe/Berlin",
+  "exceptionLogging": "STACKDRIVER",
+  "runtimeVersion": "V8",
+  "oauthScopes": [
+    "https://www.googleapis.com/auth/gmail.addons.execute",
+    "https://www.googleapis.com/auth/gmail.readonly",
+    "https://www.googleapis.com/auth/gmail.addons.current.message.readonly",
+    "https://www.googleapis.com/auth/gmail.addons.current.message.metadata",
+    "https://www.googleapis.com/auth/gmail.addons.current.action.compose",
+    "https://www.googleapis.com/auth/script.external_request"
+  ],
+  "addOns": {
+    "common": {
+      "name": "MailCraft AI",
+      "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Logo_TV_2015.png"
+    },
+    "gmail": {
+      "name": "MailCraft AI",
+      "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Logo_TV_2015.png",
+
+      "homepageTrigger": {
+        "runFunction": "onHomepage"
+      },
+
+      "contextualTriggers": [
+        {
+          "unconditional": {},
+          "onTriggerFunction": "onGmailMessageOpen"
+        }
+      ],
+
+      "composeTrigger": {
+        "draftAccess": "METADATA",
+        "selectActions": [
+          {
+            "text": "Open MailCraft AI",
+            "runFunction": "onComposeOpen"
+          }
+        ]
+      }
+    }
+  }
+}
