@@ -13,11 +13,11 @@
   "addOns": {
     "common": {
       "name": "MailCraft AI",
-      "logoUrl": "https://raw.githubusercontent.com/lakkakula-saidev/MailCraft-AI/main/gmail/MailCraft%20AI%20rounded.png"
+      "logoUrl": "https://drive.google.com/uc?export=view&id=1OXuLKbe8xb7CTL4ROwCl5EQow-F5fcDO"
     },
     "gmail": {
       "name": "MailCraft AI",
-      "logoUrl": "https://raw.githubusercontent.com/lakkakula-saidev/MailCraft-AI/main/gmail/MailCraft%20AI%20rounded.png",
+      "logoUrl": "https://drive.google.com/uc?export=view&id=1OXuLKbe8xb7CTL4ROwCl5EQow-F5fcDO",
 
       "homepageTrigger": {
         "runFunction": "onHomepage"
