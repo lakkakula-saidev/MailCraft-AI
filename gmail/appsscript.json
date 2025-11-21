@@ -4,7 +4,6 @@
   "runtimeVersion": "V8",
   "oauthScopes": [
     "https://www.googleapis.com/auth/gmail.addons.execute",
-    "https://www.googleapis.com/auth/gmail.readonly",
     "https://www.googleapis.com/auth/gmail.addons.current.message.readonly",
     "https://www.googleapis.com/auth/gmail.addons.current.message.metadata",
     "https://www.googleapis.com/auth/gmail.addons.current.action.compose",
@@ -13,11 +12,12 @@
   "addOns": {
     "common": {
       "name": "MailCraft AI",
-      "logoUrl": "https://drive.google.com/uc?export=view&id=1OXuLKbe8xb7CTL4ROwCl5EQow-F5fcDO"
+      "logoUrl": "https://raw.githubusercontent.com/lakkakula-saidev/MailCraft-AI/main/gmail/icons/logo_128.png",
+      "useLocaleFromApp": true
     },
     "gmail": {
       "name": "MailCraft AI",
-      "logoUrl": "https://drive.google.com/uc?export=view&id=1OXuLKbe8xb7CTL4ROwCl5EQow-F5fcDO",
+      "logoUrl": "https://raw.githubusercontent.com/lakkakula-saidev/MailCraft-AI/main/gmail/icons/logo_128.png",
 
       "homepageTrigger": {
         "runFunction": "onHomepage"
